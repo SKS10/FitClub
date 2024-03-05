@@ -1,0 +1,110 @@
+{% extends 'Back.html' %}
+{% load static %}
+
+
+<html xmlns:--bs-text-opacity="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>
+            Home Page
+        </title>
+
+        </head>
+    <body>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+        </ul>
+        <div class="main-banner" id="top">
+<!--    <video autoplay muted loop id="bg-video">-->
+<!--        <source src="{% static 'assets/images/gym-video.mp4' %}" type="video/mp4"/>-->
+<!--    </video>-->
+
+
+
+    <div class="video-overlay header-text">
+
+    </div>
+</div>
+
+        <div class="main">
+          Back Exercises
+        </div>
+
+          <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/Latpull.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Lat Pulldown</h2>
+        <p>While seated, you pull a hanging bar toward you to reach chin level, then release it back up with control for one repetition.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+          <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/TBAR.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>T-Bar Row</h2>
+        <p>The general T-Bar motion involves pulling weights in toward your abdomen while retracting your shoulder blades and keeping your elbows tucked .</p>
+
+
+      </div>
+    </div>
+  </div>
+
+           <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/Deadlift.png' %}"  style="width:100%">
+      <div class="container">
+        <h2>Deadlift</h2>
+        <p>The right muscles work at the right times to crane the bar from the floor to the lockout position. The bar follows a path that allows for efficient use of the legs, hips, and back.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+              <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/RearCable.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Reverse Cable Fly</h2>
+        <p>The standing reverse cable fly exercise targets your upper back muscles and shoulder muscles, particularly the posterior deltoids, or rear deltoids, on the backside of your shoulders.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+              <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/Rear.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Rear Delt Row</h2>
+        <p>Lifters utilize the rear delt fly to target the rear delts, an often lagging muscle for many lifters alike.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+              <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/Cable.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Cable Row</h2>
+        <p>The seated cable row develops the muscles of the back and the forearms. It is an excellent all-around compound exercise for developing the middle back while offering useful arm work as well.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,188 @@
+{% load static %}
+
+<html xmlns:--bs-text-opacity="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>
+            Home Page
+        </title>
+        <style>
+            .main{
+                width: 1000px;
+
+                color: white;
+                padding: 20px;
+                font-size: 30px;
+                color: black;
+            }
+            .bg-success {
+                --bs-text-opacity: 1;
+                background-color: #6610f2;
+
+            }
+            body{
+
+                background-color: #e0e0eb;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+            }
+            ul {
+                 list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            li {
+                 float: left;
+                display: inline;
+                }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                 background-color: #111;
+                }
+
+.textnew{
+    color: #e60000;
+
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+        </style>
+
+
+    </head>
+    <body>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+        </ul>
+        <div class="main-banner" id="top">
+<!--    <video autoplay muted loop id="bg-video">-->
+<!--        <source src="{% static 'assets/images/gym-video.mp4' %}" type="video/mp4"/>-->
+<!--    </video>-->
+
+
+
+    <div class="video-overlay header-text">
+
+    </div>
+</div>
+
+        <div class="main">
+          Back Exercises
+        </div>
+
+          <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/Latpull.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Lat Pulldown</h2>
+        <p>While seated, you pull a hanging bar toward you to reach chin level, then release it back up with control for one repetition.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+          <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/TBAR.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>T-Bar Row</h2>
+        <p>The general T-Bar motion involves pulling weights in toward your abdomen while retracting your shoulder blades and keeping your elbows tucked .</p>
+
+
+      </div>
+    </div>
+  </div>
+
+           <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/Deadlift.png' %}"  style="width:100%">
+      <div class="container">
+        <h2>Deadlift</h2>
+        <p>The right muscles work at the right times to crane the bar from the floor to the lockout position. The bar follows a path that allows for efficient use of the legs, hips, and back.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+              <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/RearCable.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Reverse Cable Fly</h2>
+        <p>The standing reverse cable fly exercise targets your upper back muscles and shoulder muscles, particularly the posterior deltoids, or rear deltoids, on the backside of your shoulders.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+              <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/Rear.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Rear Delt Row</h2>
+        <p>Lifters utilize the rear delt fly to target the rear delts, an often lagging muscle for many lifters alike.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+              <div class="column">
+    <div class="card">
+      <img src="{% static 'assets/images/Cable.png' %}" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Cable Row</h2>
+        <p>The seated cable row develops the muscles of the back and the forearms. It is an excellent all-around compound exercise for developing the middle back while offering useful arm work as well.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+    </body>
+</html>
